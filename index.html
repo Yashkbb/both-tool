@@ -834,7 +834,7 @@ function startPayment(){
 function proceedWithEmail(){
   collectedEmail=document.getElementById('userEmailInput').value.trim();
   document.getElementById('emailOverlay').classList.remove('active');
-  var url='https://payments.cashfree.com/forms/Ecomeasy';
+  var url='https://payments.cashfree.com/forms/ecomeasys';
   if(collectedEmail)url+='?email='+encodeURIComponent(collectedEmail);
   window.location.href=url;
 }
